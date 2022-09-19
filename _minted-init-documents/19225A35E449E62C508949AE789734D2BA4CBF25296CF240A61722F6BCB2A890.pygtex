@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+      \PYG{k}{\PYGZbs{}tkzDefPoints}(0/0/A,4/0/B)
+      \PYG{k}{\PYGZbs{}tkzDrawPoints}(A,B)
+      \PYG{k}{\PYGZbs{}tkzLabelPoints}(A,B)
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

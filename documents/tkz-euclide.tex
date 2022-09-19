@@ -1,0 +1,55 @@
+% \begin{minipage}[t][][t]{.6\textwidth}
+%   \begin{texcode}
+%   \usepackage[customcolors,shade]{hf-tikz}
+%   \usepackage{tkz-euclide}
+
+%   \begin{tikzpicture}
+%     \tkzDefPoints{0/0/A,4/0/B,3/3/C}
+%     \tkzDrawPoints(A,B,C)
+%     \tkzLabelPoints(A,B,C)
+%     \tkzDrawPolygon(A,B,C) 
+%     \tkzLabelSegment[above left](A,C){$\sqrt{13}$}
+%     \tkzFillAngle[size=0.5cm, right color=white, left color=red!50](C,B,A)
+%     \tkzLabelAngle[pos=1](C,B,A){$26.6^\circ$}
+%   \end{tikzpicture}
+%   \end{texcode}
+% \end{minipage}
+% \quad
+% \begin{minipage}[t][][b]{.3\textwidth}
+%     \begin{tikzpicture}
+%       \tkzDefPoints{0/0/A,4/0/B,3/3/C}
+%       \tkzDrawPoints(A,B,C)
+%       \tkzLabelPoints(A,B,C)
+%       \tkzDrawPolygon(A,B,C) 
+%       \tkzLabelSegment[above left](A,C){$\sqrt{13}$}
+%       \tkzFillAngle[size=0.5cm, right color=white, left color=red!50](C,B,A)
+%       \tkzLabelAngle[pos=1](C,B,A){$26.6^\circ$}
+%     \end{tikzpicture}
+% \end{minipage}
+
+\section{tkz-euclide \textcolor{green}{\faIcon{github}} \textcolor{blue}{\faIcon{code}} \faIcon{university} \textcolor{cyan}{\faIcon{google-plus}} \faIcon{at}}
+
+\begin{tikzpicture}[scale=3]
+\tikzset{
+arr/.style={postaction=decorate,
+decoration={markings,
+mark=at position 1 with {\arrow[thick]{#1}}
+}}}
+\pgfkeys{/pgf/number format/.cd,fixed,precision=2}
+\tkzDefPoints{-1/0/A',0/0/A, 1/0/B,2/0/C}
+\tkzDefPoints{0/0.5/E,1/0.5/F,2/0.5/G}
+
+\tkzDrawSegment[color=red,thin, arr=stealth](A,C)
+\tkzDrawSegment[color=red,thin, arr=stealth](A,E)
+\tkzDrawSegment[color=red,thin, arr=stealth](B,F)
+\tkzDrawSegment[color=red,thin, arr=stealth](C,G)
+\tkzDrawSegment[style=dashed, color=orange](A',A)
+\tkzDrawPoints(A',A,B,C)
+  \tkzLabelPoints[teal,above left](A)
+\tkzDrawLines[add=0 and .5](A,C)
+\tkzCalcLength[cm](A,B)\tkzGetLength{ABl}
+\tkzCalcLength[cm](B,C)\tkzGetLength{BCl}
+% \tkzDrawSegment[dim={\pgfmathprintnumber\ABl,-6pt,transform shape}](A,B)
+\tkzDrawSegment[dim={\pgfmathprintnumber\ABl,-6pt,transform shape}](A,B)
+\tkzDrawSegment[dim={\pgfmathprintnumber\BCl,-6pt,transform shape}](B,C)
+\end{tikzpicture}
