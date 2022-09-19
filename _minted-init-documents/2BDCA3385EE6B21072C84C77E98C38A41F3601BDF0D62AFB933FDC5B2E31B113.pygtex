@@ -1,0 +1,48 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c}{\PYGZpc{} \PYGZhy{}shell\PYGZhy{}escape}
+
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[letterpaper, 10pt]}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xcolor\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}fontawesome5\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} \PYGZbs{}textcolor\PYGZob{}green\PYGZcb{}\PYGZob{}\PYGZbs{}faIcon\PYGZob{}github\PYGZcb{}\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}usemintedstyle}\PYG{n+nb}{\PYGZob{}}xcode\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} pygmentize \PYGZhy{}L styles [xcode, github\PYGZhy{}dark]}
+
+
+\PYG{c}{\PYGZpc{} Custom Code Environments}
+\PYG{k}{\PYGZbs{}newminted}\PYG{n+nb}{\PYGZob{}}tex\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+  gobble=2,
+  linenos,
+  mathescape,
+  numbersep=5pt,
+  frame=single,
+  baselinestretch=1.2,
+  fontsize=\PYG{k}{\PYGZbs{}normalsize}, \PYG{c}{\PYGZpc{} huge, LARGE, large, normalsize, small, footnotesize, scriptsize, tiny}
+  highlightcolor=yellow!50,
+  highlightlines=\PYG{n+nb}{\PYGZob{}}1,3\PYG{n+nb}{\PYGZcb{}},
+  bgcolor=bg,
+  breaklines,
+\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} \PYGZbs{}begin\PYGZob{}Customcode\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}[
+    encoding=utf8,
+    linenos,
+    gobble=2,
+    mathescape,
+    numbersep=5pt,
+    frame=single,
+    framesep=2mm,
+    baselinestretch=1.2,
+    fontsize=\PYG{k}{\PYGZbs{}large}, \PYG{c}{\PYGZpc{} huge, LARGE, large, normalsize, small, footnotesize, scriptsize, tiny}
+    highlightcolor=yellow!50,
+    highlightlines=\PYG{n+nb}{\PYGZob{}}1,3\PYG{n+nb}{\PYGZcb{}},
+    bgcolor=bg,
+    breaklines]\PYG{n+nb}{\PYGZob{}}tex\PYG{n+nb}{\PYGZcb{}}
+  ...
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} \PYGZbs{}end\PYGZob{}Customcode\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

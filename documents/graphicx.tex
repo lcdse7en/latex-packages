@@ -14,7 +14,10 @@
   highlightcolor=cyan!50,
   highlightlines={7,12},
   breaklines]{tex}
+  \documentclass[letterpaper, 10pt]{article}
   \usepackage{graphicx}
+
+  \begin{document}
 
   \begin{figure}[hbt!]
   \centering
@@ -29,7 +32,28 @@
     \caption{2}
   \end{minipage}
   \end{figure}
+
+  \end{document}
 \end{minted}
 
+\begin{figure}[hbt!]
+\centering
+\begin{minipage}{0.49\textwidth}
+\centering
+  \includegraphics[width=\textwidth]{images/1.jpg}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\centering
+  \includegraphics[width=\textwidth]{images/2.png}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\centering
+  \includegraphics[width=\textwidth]{images/3.png}
+\end{minipage}
+\begin{minipage}{0.49\textwidth}
+\centering
+  \includegraphics[width=\textwidth]{images/4.png}
+\end{minipage}
+\end{figure}
 
 \newpage
