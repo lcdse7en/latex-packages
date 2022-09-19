@@ -19,6 +19,7 @@
 \usepackage{fontawesome5}
 \usepackage[customcolors,shade]{hf-tikz}
 \usepackage{tkz-euclide}
+\usepackage{chngcntr}
 
 
 \usemintedstyle{xcode}
@@ -51,7 +52,6 @@
 \fi
 %%%%%%%
 
-\definecolor{bg}{RGB}{0.95,0.95,0.95}
 \definecolor{mygrey}{RGB}{128,128,128}
 \definecolor{myteal}{RGB}{0,128,128}
 \definecolor{mypink}{RGB}{250,218,221}
@@ -105,15 +105,27 @@
 \UseTblrLibrary{counter}
 \newcounter{mycnta}
 \newcommand{\mycnta}{\stepcounter{mycnta}\arabic{mycnta}}
-
+\counterwithin{mycnta}{page}  % 换页重新关联排序
+\renewcommand\themycnta{\arabic{mycnta}}
 
 \titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
-
 
 \begin{document}
 
 \maketitle
 
+\NewTblrEnviron{mytblr}
+\SetTblrOuter[mytblr]{long}
+\SetTblrInner[mytblr]{
+  width = 0.99\linewidth,
+  rowhead = 1,
+  verb,
+  row{odd} = {bg=mypink}, 
+  row{1}   = {bg=myteal, fg=white},
+}
+\SetTblrStyle{caption-tag}{red2}
+\SetTblrStyle{firstfoot}{fg=blue2}
+\SetTblrStyle{firsthead}{font=\bfseries}
 
 \begin{minipage}[t]{.5\linewidth}
 \begin{tabular}{rp{.75\linewidth}}
@@ -130,8 +142,9 @@
 \end{minipage}
 
 \include*{documents/packages-table} % 不分页
-\include{documents/minted}
+\include{documents/fontawesome5}
 \include{documents/graphicx}
+\include{documents/minted}
 % \include{documents/tkz-euclide}
 
 
