@@ -1,0 +1,136 @@
+\section{Start Use and Setting package \textcolor{green}{\faIcon{github}} \textcolor{blue}{\faIcon{code}} \faIcon{university} \textcolor{cyan}{\faIcon{google-plus}} \faIcon{at}}
+
+
+\begin{minted}[
+  encoding=utf8,
+  linenos,
+  gobble=2,
+  mathescape,
+  numbersep=5pt,
+  frame=single,
+  framesep=2mm,
+  baselinestretch=1.2,
+  fontsize=\normalsize, % huge, LARGE, large, normalsize, small, footnotesize, scriptsize
+  highlightcolor=cyan!50,
+  breaklines]{tex}
+  \documentclass[letterpaper, 10pt]{article}
+  \usepackage[slantfont,boldfont]{xeCJK}
+  \usepackage{kotex} % Korea language environment
+  \usepackage[margin=0.45in]{geometry}
+  \usepackage{metalogo}
+  \usepackage[dvipsnames]{xcolor}
+  \usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+  \usepackage{titling}
+  \usepackage{newclude} % page break
+
+  % ------------------------ Set language ---------------------------
+  \setmainfont{Noto Sans CJK SC}
+  \setCJKmainfont{Noto Sans CJK SC}
+  \setCJKsansfont{Noto Sans CJK SC}
+  \setCJKmonofont{Noto Sans CJK SC}
+
+  % ------------------- Link images Begin ---------------------------
+  \newcommand{\pdf}{\includegraphics[height=.85em]{png/pdf.png}}
+  \newcommand{\gh}{\includegraphics[height=.85em]{png/gh.png}}
+  \newcommand{\www}{\includegraphics[height=.85em]{png/www.png}}
+  \newcommand{\email}{\includegraphics[height=.85em]{png/email.png}}
+  \newcommand{\yt}{\includegraphics[height=.85em]{png/yt.png}}
+  \newcommand{\gitee}{\includegraphics[height=.85em]{png/gitee.png}}
+
+  % ------------------ Custom title command. ------------------------
+  \renewcommand{\maketitle}{
+    \hspace{.25\textwidth}
+    \begin{minipage}[t]{.5\textwidth}
+      \par{\centering{\Huge  \texttt{\theauthor}}\par}
+    \end{minipage}
+    \begin{minipage}[t]{.25\textwidth}
+     {\footnotesize\hfill{}\color{gray}
+       \hfill{}Download this document:
+
+       \hfill{}\href[gray]{https://github.com/lcdse7en/archlinux}{documents.pdf \pdf}
+
+       \hfill{}(Last updated \thedate.)
+      }
+    \end{minipage}
+  }
+
+  \let\oldhref\href
+  \renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+  
+  \author{LcdSe7en}
+  \date{\today}
+
+\end{minted}
+
+\newpage
+
+\section{Begin document \textcolor{green}{\faIcon{github}} \textcolor{blue}{\faIcon{code}} \faIcon{university} \textcolor{cyan}{\faIcon{google-plus}} \faIcon{at}}
+\begin{minted}[
+  encoding=utf8,
+  linenos,
+  gobble=2,
+  mathescape,
+  numbersep=5pt,
+  frame=single,
+  framesep=2mm,
+  baselinestretch=1.2,
+  fontsize=\normalsize, % huge, LARGE, large, normalsize, small, footnotesize, scriptsize
+  highlightcolor=cyan!50,
+  breaklines]{vim}
+  nnoremap <buffer> <F6> <cmd>ToggleTerm size=10 direction=horizontal<cr><cmd>terminal latexmk -pvc *.tex<cr>A
+  nnoremap <buffer> <F7> <cmd>ToggleTerm size=10 direction=horizontal<cr><cmd>terminal latexmk -pvc --shell-escape *.tex<cr>A
+\end{minted}
+
+\begin{figure}[hbt!]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{images/key.png}
+\end{minipage}
+\end{figure}
+
+\begin{minted}[
+  encoding=utf8,
+  linenos,
+  gobble=2,
+  mathescape,
+  numbersep=5pt,
+  frame=single,
+  framesep=2mm,
+  baselinestretch=1.2,
+  fontsize=\normalsize, % huge, LARGE, large, normalsize, small, footnotesize, scriptsize
+  highlightcolor=cyan!50,
+  breaklines]{tex}
+  \begin{document}
+
+  \maketitle
+
+  \begin{minipage}[t]{.5\linewidth}
+  \begin{tabular}{rp{.75\linewidth}}
+    \baselineskip=20pt
+    \email{} :  &\href{2353442022@qq.com}{2353442022@qq.com}\\
+    \www{} :    &\href{https://github.com/lcdse7en/latex-packages}{https://github.com/lcdse7en/latex-packages}
+  \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{.5\linewidth}
+  \begin{tabular}{rl}
+    \gh{} :    &\href{https://github.com/lcdse7en}{https://github.com/lcdse7en}\\
+    \gitee{} : &\href{https://gitee.com/se7enlcd}{https://gitee.com/se7enlcd}
+  \end{tabular}
+  \end{minipage}
+
+
+  % no page break
+  % \usepackage{newclude}
+  \include*{documents/packages-table}
+
+  \include{documents/start}
+  \include{documents/fontawesome5}
+  \include{documents/graphicx}
+  \include{documents/minted}
+  \include{documents/tabularray}
+
+  \end{document}
+\end{minted}
+
+\newpage

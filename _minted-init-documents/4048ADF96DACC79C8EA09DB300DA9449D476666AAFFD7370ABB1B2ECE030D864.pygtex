@@ -1,0 +1,49 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[letterpaper, 10pt]}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[slantfont,boldfont]}\PYG{n+nb}{\PYGZob{}}xeCJK\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}kotex\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} Korea language environment}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[margin=0.45in]}\PYG{n+nb}{\PYGZob{}}geometry\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}metalogo\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[dvipsnames]}\PYG{n+nb}{\PYGZob{}}xcolor\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[colorlinks=true,urlcolor=Blue]}\PYG{n+nb}{\PYGZob{}}hyperref\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}titling\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}newclude\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} page break}
+
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} Set language \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{k}{\PYGZbs{}setmainfont}\PYG{n+nb}{\PYGZob{}}Noto Sans CJK SC\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setCJKmainfont}\PYG{n+nb}{\PYGZob{}}Noto Sans CJK SC\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setCJKsansfont}\PYG{n+nb}{\PYGZob{}}Noto Sans CJK SC\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}setCJKmonofont}\PYG{n+nb}{\PYGZob{}}Noto Sans CJK SC\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} Link images Begin \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}pdf}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/pdf.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}gh}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/gh.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}www}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/www.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}email}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/email.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}yt}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/yt.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}gitee}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}includegraphics}\PYG{n+na}{[height=.85em]}\PYG{n+nb}{\PYGZob{}}png/gitee.png\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+
+\PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} Custom title command. \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{k}{\PYGZbs{}renewcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}maketitle}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}
+  \PYG{k}{\PYGZbs{}hspace}\PYG{n+nb}{\PYGZob{}}.25\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}.5\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}par}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}centering}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}Huge}  \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}theauthor}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}\PYG{k}{\PYGZbs{}par}\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}.25\PYG{k}{\PYGZbs{}textwidth}\PYG{n+nb}{\PYGZcb{}}
+   \PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}footnotesize\PYGZbs{}hfill}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}gray\PYG{n+nb}{\PYGZcb{}}
+     \PYG{k}{\PYGZbs{}hfill}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}Download this document:
+
+     \PYG{k}{\PYGZbs{}hfill}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}\PYG{k}{\PYGZbs{}href}\PYG{n+na}{[gray]}\PYG{n+nb}{\PYGZob{}}https://github.com/lcdse7en/archlinux\PYG{n+nb}{\PYGZcb{}\PYGZob{}}documents.pdf \PYG{k}{\PYGZbs{}pdf}\PYG{n+nb}{\PYGZcb{}}
+
+     \PYG{k}{\PYGZbs{}hfill}\PYG{n+nb}{\PYGZob{}\PYGZcb{}}(Last updated \PYG{k}{\PYGZbs{}thedate}.)
+    \PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}let\PYGZbs{}oldhref\PYGZbs{}href}
+\PYG{k}{\PYGZbs{}renewcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}href}\PYG{n+nb}{\PYGZcb{}}[3][blue]\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}oldhref}\PYG{n+nb}{\PYGZob{}}\PYGZsh{}2\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}color}\PYG{n+nb}{\PYGZob{}}\PYGZsh{}1\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYGZsh{}3\PYG{n+nb}{\PYGZcb{}\PYGZcb{}\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}author}\PYG{n+nb}{\PYGZob{}}LcdSe7en\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}date}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}today}\PYG{n+nb}{\PYGZcb{}}
+
+\end{Verbatim}

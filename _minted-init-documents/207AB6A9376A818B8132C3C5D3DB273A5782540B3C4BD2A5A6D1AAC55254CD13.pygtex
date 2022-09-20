@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{n+nb}{nnoremap} \PYG{p}{\PYGZlt{}}buffer\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}F6\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}cmd\PYG{p}{\PYGZgt{}}ToggleTerm size\PYG{p}{=}\PYG{l+m}{10} direction\PYG{p}{=}horizontal\PYG{p}{\PYGZlt{}}\PYG{k}{cr}\PYG{p}{\PYGZgt{}\PYGZlt{}}cmd\PYG{p}{\PYGZgt{}}terminal latexmk \PYG{p}{\PYGZhy{}}pvc *.tex\PYG{p}{\PYGZlt{}}\PYG{k}{cr}\PYG{p}{\PYGZgt{}}A
+\PYG{n+nb}{nnoremap} \PYG{p}{\PYGZlt{}}buffer\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}F7\PYG{p}{\PYGZgt{}} \PYG{p}{\PYGZlt{}}cmd\PYG{p}{\PYGZgt{}}ToggleTerm size\PYG{p}{=}\PYG{l+m}{10} direction\PYG{p}{=}horizontal\PYG{p}{\PYGZlt{}}\PYG{k}{cr}\PYG{p}{\PYGZgt{}\PYGZlt{}}cmd\PYG{p}{\PYGZgt{}}terminal latexmk \PYG{p}{\PYGZhy{}}pvc \PYG{p}{\PYGZhy{}\PYGZhy{}}\PYG{k}{shell}\PYG{p}{\PYGZhy{}}escape *.tex\PYG{p}{\PYGZlt{}}\PYG{k}{cr}\PYG{p}{\PYGZgt{}}A
+\end{Verbatim}

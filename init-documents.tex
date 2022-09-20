@@ -36,21 +36,6 @@
   highlightlines={},
   breaklines,
 }
-% Macro to allow image links in XeLaTeX
-\ifxetex
-  \usepackage{letltxmacro}
-  \setlength{\XeTeXLinkMargin}{1pt}
-  \LetLtxMacro\SavedIncludeGraphics\includegraphics
-  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
-    \IncludeGraphicsAux{#1}%
-  }%
-  \newcommand*{\IncludeGraphicsAux}[2]{%
-    \XeTeXLinkBox{%
-      \SavedIncludeGraphics#1{#2}%
-    }%
-  }%
-\fi
-%%%%%%%
 
 \definecolor{mygrey}{RGB}{128,128,128}
 \definecolor{myteal}{RGB}{0,128,128}
@@ -58,8 +43,6 @@
 
 
 \setmainfont{Noto Sans CJK SC}
-% \setmonofont{Monaco} % 英文等宽字体
-% \setsansfont{Trebuchet MS} % 英文无衬线字体
 \setCJKmainfont{Noto Sans CJK SC}
 \setCJKsansfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans CJK SC}
@@ -101,19 +84,9 @@
 	\end{minipage}
 }
 
-
-\UseTblrLibrary{counter}
-\newcounter{mycnta}
-\newcommand{\mycnta}{\stepcounter{mycnta}\arabic{mycnta}}
-\counterwithin{mycnta}{page}  % 换页重新关联排序
-\renewcommand\themycnta{\arabic{mycnta}}
-
-\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
-
-\begin{document}
-
-\maketitle
-
+% -----------------------------------------
+% ---   Setting Table Environment Begin ---
+% -----------------------------------------
 \NewTblrEnviron{mytblr}
 \SetTblrOuter[mytblr]{long}
 \SetTblrInner[mytblr]{
@@ -127,6 +100,20 @@
 \SetTblrStyle{firstfoot}{fg=blue2}
 \SetTblrStyle{firsthead}{font=\bfseries}
 
+\UseTblrLibrary{counter}
+\newcounter{mycnta}
+\newcommand{\mycnta}{\stepcounter{mycnta}\arabic{mycnta}}
+\counterwithin{mycnta}{page}  % 换页重新关联排序
+\renewcommand\themycnta{\arabic{mycnta}}
+% ---   Setting Table Environment end ---
+
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+
+\begin{document}
+
+\maketitle
+
+
 \begin{minipage}[t]{.5\linewidth}
 \begin{tabular}{rp{.75\linewidth}}
 	\baselineskip=20pt
@@ -136,16 +123,17 @@
 \end{minipage}
 \begin{minipage}[t]{.5\linewidth}
 \begin{tabular}{rl}
-	\gh{} : & \href{https://github.com/lcdse7en}{https://github.com/lcdse7en}\\
+	\gh{} : & \href{https://github.com/lcdse7en/latex-packages}{https://github.com/lcdse7en/latex-packages}\\
 	\gitee{} : &\href{https://gitee.com/se7enlcd}{https://gitee.com/se7enlcd}
 \end{tabular}
 \end{minipage}
 
 \include*{documents/packages-table} % 不分页
-\include{documents/fontawesome5}
-\include{documents/graphicx}
-\include{documents/minted}
-\include{documents/tabularray}
+\include{documents/start}
+% \include{documents/fontawesome5}
+% \include{documents/graphicx}
+% \include{documents/minted}
+% \include{documents/tabularray}
 % \include{documents/tkz-euclide}
 
 

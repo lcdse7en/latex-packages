@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}maketitle}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}.5\PYG{k}{\PYGZbs{}linewidth}\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}\PYGZob{}}rp\PYG{n+nb}{\PYGZob{}}.75\PYG{k}{\PYGZbs{}linewidth}\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}baselineskip}=20pt
+  \PYG{k}{\PYGZbs{}email}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} :  \PYG{n+nb}{\PYGZam{}}\PYG{k}{\PYGZbs{}href}\PYG{n+nb}{\PYGZob{}}2353442022@qq.com\PYG{n+nb}{\PYGZcb{}\PYGZob{}}2353442022@qq.com\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}\PYGZbs{}}
+  \PYG{k}{\PYGZbs{}www}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} :    \PYG{n+nb}{\PYGZam{}}\PYG{k}{\PYGZbs{}href}\PYG{n+nb}{\PYGZob{}}https://github.com/lcdse7en/latex\PYGZhy{}packages\PYG{n+nb}{\PYGZcb{}\PYGZob{}}https://github.com/lcdse7en/latex\PYGZhy{}packages\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}[t]\PYG{n+nb}{\PYGZob{}}.5\PYG{k}{\PYGZbs{}linewidth}\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}\PYGZob{}}rl\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}gh}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} :    \PYG{n+nb}{\PYGZam{}}\PYG{k}{\PYGZbs{}href}\PYG{n+nb}{\PYGZob{}}https://github.com/lcdse7en\PYG{n+nb}{\PYGZcb{}\PYGZob{}}https://github.com/lcdse7en\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}\PYGZbs{}}
+  \PYG{k}{\PYGZbs{}gitee}\PYG{n+nb}{\PYGZob{}\PYGZcb{}} : \PYG{n+nb}{\PYGZam{}}\PYG{k}{\PYGZbs{}href}\PYG{n+nb}{\PYGZob{}}https://gitee.com/se7enlcd\PYG{n+nb}{\PYGZcb{}\PYGZob{}}https://gitee.com/se7enlcd\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tabular\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}minipage\PYG{n+nb}{\PYGZcb{}}
+
+
+\PYG{c}{\PYGZpc{} no page break}
+\PYG{c}{\PYGZpc{} \PYGZbs{}usepackage\PYGZob{}newclude\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include*}\PYG{n+nb}{\PYGZob{}}documents/packages\PYGZhy{}table\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/start\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/fontawesome5\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/graphicx\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/tabularray\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
