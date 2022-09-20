@@ -1,0 +1,47 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[letterpaper, 10pt]}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}tabularray\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xcolor\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}chngcntr\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}definecolor}\PYG{n+nb}{\PYGZob{}}mygrey\PYG{n+nb}{\PYGZcb{}\PYGZob{}}RGB\PYG{n+nb}{\PYGZcb{}\PYGZob{}}128,128,128\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}definecolor}\PYG{n+nb}{\PYGZob{}}myteal\PYG{n+nb}{\PYGZcb{}\PYGZob{}}RGB\PYG{n+nb}{\PYGZcb{}\PYGZob{}}0,128,128\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}definecolor}\PYG{n+nb}{\PYGZob{}}mypink\PYG{n+nb}{\PYGZcb{}\PYGZob{}}RGB\PYG{n+nb}{\PYGZcb{}\PYGZob{}}250,218,221\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}NewTblrEnviron}\PYG{n+nb}{\PYGZob{}}mytblr\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}SetTblrOuter}\PYG{n+na}{[mytblr]}\PYG{n+nb}{\PYGZob{}}long\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}SetTblrInner}\PYG{n+na}{[mytblr]}\PYG{n+nb}{\PYGZob{}}
+  width = 0.99\PYG{k}{\PYGZbs{}linewidth},
+  rowhead = 1,
+  verb,
+  row\PYG{n+nb}{\PYGZob{}}odd\PYG{n+nb}{\PYGZcb{}} = \PYG{n+nb}{\PYGZob{}}bg=mypink\PYG{n+nb}{\PYGZcb{}},
+  row\PYG{n+nb}{\PYGZob{}}1\PYG{n+nb}{\PYGZcb{}}   = \PYG{n+nb}{\PYGZob{}}bg=myteal, fg=white\PYG{n+nb}{\PYGZcb{}},
+\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}SetTblrStyle}\PYG{n+nb}{\PYGZob{}}caption\PYGZhy{}tag\PYG{n+nb}{\PYGZcb{}\PYGZob{}}red2\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}SetTblrStyle}\PYG{n+nb}{\PYGZob{}}firstfoot\PYG{n+nb}{\PYGZcb{}\PYGZob{}}fg=blue2\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}SetTblrStyle}\PYG{n+nb}{\PYGZob{}}firsthead\PYG{n+nb}{\PYGZcb{}\PYGZob{}}font=\PYG{k}{\PYGZbs{}bfseries}\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}UseTblrLibrary}\PYG{n+nb}{\PYGZob{}}counter\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcounter}\PYG{n+nb}{\PYGZob{}}mycnta\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}newcommand}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}mycnta}\PYG{n+nb}{\PYGZcb{}\PYGZob{}}\PYG{k}{\PYGZbs{}stepcounter}\PYG{n+nb}{\PYGZob{}}mycnta\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}}mycnta\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+\PYG{c}{\PYGZpc{} resort on Page}
+\PYG{k}{\PYGZbs{}counterwithin}\PYG{n+nb}{\PYGZob{}}mycnta\PYG{n+nb}{\PYGZcb{}\PYGZob{}}page\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}renewcommand\PYGZbs{}themycnta}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}arabic}\PYG{n+nb}{\PYGZob{}}mycnta\PYG{n+nb}{\PYGZcb{}\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}NewTableCommand\PYGZbs{}myhline}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}hline}\PYG{n+na}{[0.2em,black]}\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}mytblr\PYG{n+nb}{\PYGZcb{}}[
+    caption = \PYG{n+nb}{\PYGZob{}}caption Name\PYG{n+nb}{\PYGZcb{}},
+  ]\PYG{n+nb}{\PYGZob{}}
+    colspec = \PYG{n+nb}{\PYGZob{}}|l|X[2.8]|X[2.8]|X[2.8]|X[2.8]|\PYG{n+nb}{\PYGZcb{}},
+    \PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}myhline}
+    \PYG{k}{\PYGZbs{}SetRow}\PYG{n+nb}{\PYGZob{}}c\PYG{n+nb}{\PYGZcb{}} ID \PYG{n+nb}{\PYGZam{}} column1  \PYG{n+nb}{\PYGZam{}} column2  \PYG{n+nb}{\PYGZam{}} column3  \PYG{n+nb}{\PYGZam{}} column4 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+    \PYG{k}{\PYGZbs{}myhline}
+    \PYG{k}{\PYGZbs{}mycnta} \PYG{n+nb}{\PYGZam{}} text1 \PYG{n+nb}{\PYGZam{}} text2 \PYG{n+nb}{\PYGZam{}} test3 \PYG{n+nb}{\PYGZam{}} test 4 \PYG{k}{\PYGZbs{}\PYGZbs{}}
+
+    \PYG{k}{\PYGZbs{}myhline}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}mytblr\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
