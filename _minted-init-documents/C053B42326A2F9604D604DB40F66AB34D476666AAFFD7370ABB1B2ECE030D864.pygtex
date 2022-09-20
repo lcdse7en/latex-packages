@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}maketitle}
+
+
+\PYG{c}{\PYGZpc{} no page break}
+\PYG{c}{\PYGZpc{} \PYGZbs{}usepackage\PYGZob{}newclude\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include*}\PYG{n+nb}{\PYGZob{}}documents/basic\PYGZhy{}info\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include*}\PYG{n+nb}{\PYGZob{}}documents/packages\PYGZhy{}table\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/start\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/fontawesome5\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/graphicx\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}include}\PYG{n+nb}{\PYGZob{}}documents/tabularray\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}document\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

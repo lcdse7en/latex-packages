@@ -16,7 +16,7 @@
   \documentclass[letterpaper, 10pt]{article}
   \usepackage{tabularray}
   \usepackage{xcolor}
-  \usepackage{chngcntr}
+  \usepackage{chngcntr} % resort
 
   \definecolor{mygrey}{RGB}{128,128,128}
   \definecolor{myteal}{RGB}{0,128,128}
@@ -45,6 +45,7 @@
   \NewTableCommand\myhline{\hline[0.2em,black]}
   
   \begin{document}
+
   \begin{mytblr}[
       caption = {caption Name},
     ]{
@@ -54,9 +55,10 @@
       \SetRow{c} ID & column1  & column2  & column3  & column4 \\
       \myhline
       \mycnta & text1 & text2 & test3 & test 4 \\
-      
+      ...
       \myhline
   \end{mytblr}
+
   \end{document}
 \end{minted}
 
