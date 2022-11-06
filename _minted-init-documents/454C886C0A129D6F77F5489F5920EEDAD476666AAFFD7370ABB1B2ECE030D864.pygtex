@@ -9,7 +9,7 @@
 \PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}titling\PYG{n+nb}{\PYGZcb{}}
 \PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}newclude\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} page break}
 \PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} \PYGZhy{}shell\PYGZhy{}escape}
-
+\PYG{c}{\PYGZpc{} sudo pip3 install pygments}
 \PYG{k}{\PYGZbs{}usemintedstyle}\PYG{n+nb}{\PYGZob{}}xcode\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} pygmentize \PYGZhy{}L styles [xcode, github\PYGZhy{}dark]}
 \PYG{c}{\PYGZpc{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} Set language \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
 \PYG{k}{\PYGZbs{}setmainfont}\PYG{n+nb}{\PYGZob{}}Noto Sans CJK SC\PYG{n+nb}{\PYGZcb{}}

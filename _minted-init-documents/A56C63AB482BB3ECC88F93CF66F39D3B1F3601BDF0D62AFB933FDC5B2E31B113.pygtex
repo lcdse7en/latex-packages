@@ -1,4 +1,5 @@
 \begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{c}{\PYGZpc{} sudo pip3 install pygments}
 \PYG{c}{\PYGZpc{} \PYGZhy{}shell\PYGZhy{}escape}
 
 \PYG{k}{\PYGZbs{}documentclass}\PYG{n+na}{[letterpaper, 10pt]}\PYG{n+nb}{\PYGZob{}}article\PYG{n+nb}{\PYGZcb{}}
