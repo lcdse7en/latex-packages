@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}动机}{2}{section.1}%
+\contentsline {section}{\numberline {2}许可证和需要}{2}{section.2}%
+\contentsline {section}{\numberline {3}如何工作}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}背景}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}最基本的}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}跨越多栏的条目}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}跨越多栏的条目}{6}{subsection.3.4}%
+\contentsline {section}{\numberline {4}可用的选项}{10}{section.4}%
+\contentsline {section}{\numberline {5}可用的实例}{15}{section.5}%
+\contentsline {section}{\numberline {6}自定义标签}{16}{section.6}%
+\contentsline {section}{\numberline {7}新的tasks类(tasks-like)环境}{17}{section.7}%
+\contentsline {section}{\numberline {8}样式化 tasks}{18}{section.8}%
+\contentsline {subsection}{\numberline {8.1}tasks 对象}{18}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}可用的选项}{18}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}预定义的实例}{19}{subsubsection.8.1.2}%

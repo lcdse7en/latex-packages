@@ -1,0 +1,50 @@
+\definecolor{Tasks}{RGB}{165,10,17}
+\definecolor{Black}{RGB}{153,63,38}
+\definecolor{Keycolor}{RGB}{37,138,210}
+\usepackage[
+left=1.0in,
+right=1.0in,
+top=1.2in,
+bottom=1.2in
+]{geometry}
+\usepackage{expl3}
+\setmainfont{Fandolsong-Regular.otf}
+\usepackage{notesetup_document}
+
+\RequirePackage{listings}
+\renewcommand{\ttdefault}{cmtt}
+\lstdefinestyle{mystyle}
+{
+basicstyle       =\ttfamily
+\lst@ifdisplaystyle\small\fi
+}
+
+\lstset{
+ basicstyle      =\ttfamily,
+ style           =mystyle,
+ breaklines      =true
+ }
+
+\definecolor{blackg}{RGB}{251,246,225}
+\definecolor{frenchplum}{RGB}{190,20,83}
+\lstset{
+  language       =[LaTeX]TeX,
+  texcsstyle     =*\color{red},
+  numbers        =left, 
+  numberstyle    =\color{Tasks}\tiny, 
+  stepnumber     =1, 
+  numbersep      =3pt,
+  breaklines     =true,
+  keywordstyle   =\color{Tasks},
+  commentstyle   =\color{gray},
+  emph           ={},
+  emphstyle      ={\color{orange!60!red}},
+  morekeywords   ={*},
+  frame          =single,
+  tabsize        =2,
+  rulecolor      =\color{gray},
+  framerule      =0pt,
+  columns        =flexible,
+  backgroundcolor=\color{white}
+}
+\usepackage{listings}
